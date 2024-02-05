@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-image: url(back.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 85%;
+    width: 90%; 
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    overflow-y: auto;
+}
+
+h1 {
+    color: #355340;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.form div label {
+    padding: 4px;
+}
+
+input,
+textarea {
+    height: 32px;
+    opacity: 0.6;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.486);
+    background: rgba(255, 255, 255, 0.713);
+    color: #fff;
+}
+
+#checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+button {
+    height: 40px;
+    width: 50%;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    background-color: #04b0db;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0092b7;
+}
+
+button[type="reset"] {
+    background-color: #d00000;
+}
+
+button[type="reset"]:hover {
+    background-color: #b10000;
+}
+
+button:active {
+    transform: scale(0.9);
+    background-color: #121212;
+}
+
+#radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
